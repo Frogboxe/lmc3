@@ -1,0 +1,28 @@
+SET 0;
+STA X;
+SET 1;
+STA ONE;
+
+INP;
+STA A;
+INP;
+STA Y;
+
+LOOP;
+LDA Y;
+BRZ EXIT;
+
+LDA X;
+ADD A;
+STA X;
+
+LDA Y;
+SUB ONE;
+STA Y;
+
+BRA LOOP;
+
+EXIT;
+LDA X;
+OUT;
+HLT;

@@ -1,0 +1,16 @@
+INP;
+STA A;
+INP;
+STA B;
+
+LOOP;
+
+LDA A;
+SUB B;
+STA A;
+BRP LOOP;
+
+LDA A;
+ADD B;
+OUT;
+HLT;

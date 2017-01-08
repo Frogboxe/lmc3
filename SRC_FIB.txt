@@ -1,0 +1,32 @@
+SET 0;
+STA A;
+SET 1;
+STA B;
+INP;
+STA LIMIT;
+
+LDA A;
+OUT;
+
+LOOP;
+LDA LIMIT;
+SUB B;
+BRP NEXT;
+BRA EXIT;
+
+NEXT;
+LDA A;
+ADD B;
+STA C;
+
+LDA B;
+STA A;
+OUT;
+
+LDA C;
+STA B;
+
+BRA LOOP;
+
+EXIT;
+HLT;

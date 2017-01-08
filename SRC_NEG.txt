@@ -1,0 +1,8 @@
+INP;
+STA NUM;
+
+SUB NUM;
+SUB NUM;
+
+OUT;
+HLT;
